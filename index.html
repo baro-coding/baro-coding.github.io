@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>선착순 설문::</title>
+    <title>언어카페 신청사이트::</title>
 </head>
 <body>
     <script>
     window.onload = function() {
         var now = new Date().getTime();
-        var countDownDate = new Date("Mar 12, 2023 00:15:00").getTime();
+        var countDownDate = new Date("Mar 12, 2023 18:00:00").getTime();
         var distance = countDownDate - now;
         
         if (distance <= 0) {
             location.href = "https://forms.gle/8bZiHQGs5iW2N7bv5";
         } else {
-            alert("신청은 12시10분부터 가능합니다.");
+            alert("신청은 오후6시 부터 가능합니다.");
             window.close()
         }
       };
