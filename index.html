@@ -8,8 +8,17 @@
 <body>
     <script>
     window.onload = function() {
-        alert("test");
-        location.href = "https://github.io"
+        var now = new Date().getTime();
+        // 비교할 시간을 설정합니다. 2023년 3월 15일 12시 30분
+        var countDownDate = new Date("Mar 11, 2023 23:33:00").getTime();
+        // 현재 시간과 비교할 시간의 차이를 계산합니다.
+        var distance = countDownDate - now;
+        // 만약 차이가 0 이하일 경우에는 지정된 시간이 이미 지난 것입니다.
+        if (distance <= 0) {
+        alert("설문은 떙떙부터 시작합니다.");
+        } else {
+        alert("설문페이지로 이동")
+        }
       };
     </script>
       test123
